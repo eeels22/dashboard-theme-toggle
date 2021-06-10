@@ -1,6 +1,3 @@
-// NPM packages
-import React from "react";
-
 export default function MetricCard({ info }) {
   // Constants
   const channelLowercase = info.channel.toLowerCase();
@@ -12,9 +9,11 @@ export default function MetricCard({ info }) {
   const trendIconURL = trendIconObject.default;
 
   return (
-    <article>
-      <span>{info.metric}</span>
-      <img src={channelLogoURL} alt={info.channel} />
+    <article className="MetricCard">
+      <header className="header-card">
+        <h3>{info.metric}</h3>
+        <img className="channel-icon" src={channelLogoURL} alt={info.channel} />
+      </header>
       <span>{info.stat}</span>
       <span>
         <img src={trendIconURL} alt={trendDirection} />
