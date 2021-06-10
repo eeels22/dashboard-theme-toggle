@@ -10,15 +10,19 @@ export default function MetricCard({ info }) {
 
   return (
     <article className="MetricCard">
-      <header className="header-card">
+      <header>
         <h3>{info.metric}</h3>
-        <img className="channel-icon" src={channelLogoURL} alt={info.channel} />
+        <img className="social-icon" src={channelLogoURL} alt={info.channel} />
       </header>
-      <span>{info.stat}</span>
-      <span>
-        <img src={trendIconURL} alt={trendDirection} />
-        {info.change_today}%
-      </span>
+      <div>
+        <span className="prominent">{info.stat}</span>
+        <div>
+          <img className="trend-icon" src={trendIconURL} alt={trendDirection} />
+          <span className={trendDirection + " trend"}>
+            {Math.abs(info.change_today)}%
+          </span>
+        </div>
+      </div>
     </article>
   );
 }
