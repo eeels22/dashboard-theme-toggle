@@ -1,0 +1,20 @@
+// NPM packages
+import React from "react";
+
+// Project files
+import MetricCard from "./MetricCard";
+import overviewData from "../data/overview.json";
+
+export default function OverviewList() {
+  // Constants
+  const metricCardArray = overviewData.map((item) => (
+    <MetricCard key={item.id} info={item} />
+  ));
+
+  return (
+    <section>
+      <h2>Overview - Today</h2>
+      {metricCardArray}
+    </section>
+  );
+}
