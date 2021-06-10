@@ -1,0 +1,25 @@
+/* Google Fonts - Inter 400, 700 */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 50px;
+  margin-bottom: 32px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+p,
+span {
+  font-size: 12px;
+}
