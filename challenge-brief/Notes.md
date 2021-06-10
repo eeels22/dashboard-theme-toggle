@@ -19,27 +19,42 @@
 - H1 (Overview - Today)
 - **MetricDetailList**
   - **MetricCard**
-    - span (metric)
+    - H3 (metric)
     - img (social icon)
     - span (stat)
-    - span (change)
+    - span
+      -img (trend)
+      - (change)
 
 ## Spikes
 
 - CSS custom properties
   - declare these at :root and apply a clas to body
 - prefers-color-scheme media query to override
+
   - https://kilianvalkhof.com/2020/design/your-dark-mode-toggle-is-broken/
   - https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
   - https://inclusive-components.design/toggle-button/
+
+- Context API https://vimalselvam.com/post/toggle-theme-using-react-hooks/
 
 ## Accessibility
 
 - Alt text for icons/ titles (screenreader-only text)
 - Addition cue for increase/descrease than just color
 - Accessible form controls:
+
   - https://scottaohara.github.io/a11y_styled_form_controls/
   - https://kittygiraudel.com/2021/04/05/an-accessible-toggle/
+  - https://inclusive-components.design/toggle-button/
+
+How you would style the active state is quite up to you, but I’d personally save on writing class attributes to the <span>s with JavaScript. Instead, I’d write some CSS using pseudo classes to target the relevant span dependent on the state.
+
+[role="switch"][aria-checked="true"] :first-child,
+[role="switch"][aria-checked="false"] :last-child {
+background: #000;
+color: #fff;
+}
 
 ## Resources
 
