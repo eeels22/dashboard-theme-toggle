@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "channel": "facebook",
+    "handle": "@nathanf",
+    "number_followers": "1987",
+    "change_today": "12"
+  },
+  {
+    "id": 2,
+    "channel": "twitter",
+    "handle": "@nathanf",
+    "number_followers": "1044",
+    "change_today": "99"
+  },
+  {
+    "id": 3,
+    "channel": "instagram",
+    "handle": "@realnathanf",
+    "number_followers": "11k",
+    "change_today": "1099"
+  },
+  {
+    "id": 4,
+    "channel": "youtube",
+    "handle": "Nathan F.",
+    "number_followers": "8239",
+    "change_today": "-144"
+  }
+]
