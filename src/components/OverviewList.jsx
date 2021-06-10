@@ -1,6 +1,3 @@
-// NPM packages
-import React from "react";
-
 // Project files
 import MetricCard from "./MetricCard";
 import overviewData from "../data/overview.json";
