@@ -1,58 +1,58 @@
 [
   {
     "id": 1,
-    "channel": "facebook",
+    "channel": "Facebook",
     "metric": "Page Views",
     "stat": "87",
     "change_today": "3"
   },
   {
-    "id": 1,
-    "channel": "facebook",
-    "metric": "Page Views",
-    "stat": "87",
-    "change_today": "3"
+    "id": 2,
+    "channel": "Facebook",
+    "metric": "Likes",
+    "stat": "52",
+    "change_today": "-2"
   },
   {
-    "id": 1,
-    "channel": "facebook",
-    "metric": "Page Views",
-    "stat": "87",
-    "change_today": "3"
+    "id": 3,
+    "channel": "Instagram",
+    "metric": "Likes",
+    "stat": "5462",
+    "change_today": "2257"
   },
   {
-    "id": 1,
-    "channel": "facebook",
-    "metric": "Page Views",
-    "stat": "87",
-    "change_today": "3"
+    "id": 4,
+    "channel": "Instagram",
+    "metric": "Profile Views",
+    "stat": "52k",
+    "change_today": "1375"
   },
   {
-    "id": 1,
-    "channel": "facebook",
-    "metric": "Page Views",
-    "stat": "87",
-    "change_today": "3"
+    "id": 5,
+    "channel": "Twitter",
+    "metric": "Retweets",
+    "stat": "117",
+    "change_today": "303"
   },
   {
-    "id": 1,
-    "channel": "facebook",
-    "metric": "Page Views",
-    "stat": "87",
-    "change_today": "3"
+    "id": 6,
+    "channel": "Twitter",
+    "metric": "Likes",
+    "stat": "507",
+    "change_today": "553"
   },
   {
-    "id": 1,
-    "channel": "facebook",
-    "metric": "Page Views",
-    "stat": "87",
-    "change_today": "3"
+    "id": 7,
+    "channel": "YouTube",
+    "metric": "Likes",
+    "stat": "107",
+    "change_today": "-19"
   },
   {
-    "id": 1,
-    "channel": "facebook",
-    "metric": "Page Views",
-    "stat": "87",
-    "change_today": "3"
+    "id": 8,
+    "channel": "YouTube",
+    "metric": "Total Views",
+    "stat": "1407",
+    "change_today": "-12"
   }
 ]
