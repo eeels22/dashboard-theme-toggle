@@ -44,7 +44,12 @@
 }
 
 .instagram {
-  border-top: 4px solid hsl(37, 97%, 70%); /* how to add linear gradient to border with border radius?*/
+  border-top: 4px solid transparent; /* https://dev.to/afif/border-with-gradient-and-radius-387f?*/
+  background-image: linear-gradient(hsl(227, 47%, 96%), hsl(227, 47%, 96%)),
+    /* Toggle */
+      radial-gradient(circle at top left, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 .youtube {
