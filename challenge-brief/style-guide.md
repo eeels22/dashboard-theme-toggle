@@ -45,6 +45,11 @@ The designs were created to the following widths:
 - Dark Grayish Blue (Text): hsl(228, 12%, 44%)
 - Very Dark Blue (Text): hsl(230, 17%, 14%)
 
+#### Toggler
+
+- Darker grey (toggle BG): hsl(229, 20%, 74)
+- Lighter grey (toggle current): hsl(222, 50%, 96)
+
 ## Typography
 
 ### Body Copy
