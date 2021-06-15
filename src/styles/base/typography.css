@@ -7,16 +7,24 @@
 
 h1 {
   font-size: 28px;
+  color: var(--text-primary);
 }
 
 h2 {
   font-size: 24px;
-  margin-top: 50px;
+  margin-top: 32px;
   margin-bottom: 32px;
+  color: var(--text-secondary);
 }
+
+/* TODO update dark mode uses --text-primary for h2
+.dark h2 {
+  color: var(--text-primary);
+} */
 
 h3 {
   font-size: 14px;
+  color: var(--text-secondary);
 }
 
 p,

@@ -1,8 +1,13 @@
 /* Base */
 @import url("./base/typography.css");
+@import url("./base/variables.css");
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
 }
 
 /* App */
@@ -13,13 +18,40 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 25px;
 }
 
 /* Header */
+
+#button-dark-mode {
+  border: none;
+  border-radius: 50px;
+  padding: 4px;
+}
+
+/* Selected dark mode option*/
 [role="switch"][aria-checked="true"] :first-child,
 [role="switch"][aria-checked="false"] :last-child {
-  background: red;
-  color: #fff;
+  background: var(--toggle-selected);
+  color: var(--toggle-background);
+  border-radius: 50%;
+}
+
+.ThemeToggler {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sub-heading,
+.handle {
+  font-weight: bold;
+  color: var(--text-secondary);
+}
+
+/* Section */
+section {
+  width: 100%;
 }
 
 /* FollowerCard */
@@ -28,11 +60,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  width: 255px;
+  width: 100%;
   height: 216px;
-  margin: 16px;
+  margin: 24px 0;
   border-radius: 5px;
-  background: hsl(227, 47%, 96%); /* Toggle */
+  background: var(--card-background);
 }
 
 .facebook {
@@ -44,8 +76,12 @@
 }
 
 .instagram {
-  border-top: 4px solid transparent; /* https://dev.to/afif/border-with-gradient-and-radius-387f?*/
-  background-image: linear-gradient(hsl(227, 47%, 96%), hsl(227, 47%, 96%)),
+  /* Linear gradient border with border radius, see: https://stackoverflow.com/a/53037637 */
+  border-top: 4px solid transparent;
+  background-image: linear-gradient(
+      var(--card-background),
+      var(--card-background)
+    ),
     /* Toggle */
       radial-gradient(circle at top left, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
   background-origin: border-box;
@@ -77,12 +113,14 @@
   font-weight: 700;
   margin: 8px 0;
   padding: 0;
+  color: var(--text-primary);
 }
 
 .followers {
   font-size: 12px;
-  letter-spacing: 1.5em;
+  letter-spacing: 0.6em;
   margin: 0;
+  color: var(--text-secondary);
 }
 
 .social-icon {
@@ -92,14 +130,11 @@
 
 /* MetricCard */
 .MetricCard {
-  width: 255px;
+  width: 100%;
   height: 125px;
-  margin: 24px 16px;
+  margin: 24px 0;
   padding: 20px 32px 26px 24px;
-  background: hsl(227, 47%, 96%); /* Toggle */
-  /*   display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
+  background: var(--card-background);
 }
 
 .MetricCard header {
@@ -120,6 +155,7 @@
 .prominent {
   font-size: 32px;
   font-weight: 700;
+  color: var(--text-primary);
 }
 
 /* Trend */

@@ -12,7 +12,7 @@ export default function FollowerCard({ info }) {
     <article className={channelLowercase + " FollowerCard"}>
       <header>
         <img className="social-icon" src={channelLogoURL} alt={info.channel} />
-        <span>{info.handle}</span>
+        <span className="handle">{info.handle}</span>
       </header>
       <div className="follower-count">
         <p className="statistic">{info.number_followers}</p>
