@@ -1,0 +1,19 @@
+:root {
+  /** dark mode **/
+  --background: hsl(230, 17%, 14%); /* Very Dark Blue */
+  --top-background-pattern: hsl(232, 19%, 15%); /* Very Dark Blue */
+  --card-background: hsl(228, 28%, 20%); /* Dark Desaturated Blue */
+  --text-secondary: hsl(228, 34%, 66%); /* Desaturated Blue */
+  --text-primary: hsl(0, 0%, 100%); /* White */
+
+  /** light mode **/
+  --background: hsl(0, 0%, 100%); /* White */
+  --top-background-pattern: hsl(225, 100%, 98%); /* Very Pale Blue */
+  --card-background: hsl(227, 47%, 96%); /* Light Grayish Blue */
+  --text-secondary: hsl(228, 12%, 44%); /* Dark Grayish Blue */
+  --text-primary: hsl(230, 17%, 14%); /* Very Dark Blue */
+
+  /** toggler **/
+  --toggle-background: hsl(229, 20%, 74); /* Darker grey */
+  --toggle-selected: hsl(222, 50%, 96); /* Lighter grey */
+}
