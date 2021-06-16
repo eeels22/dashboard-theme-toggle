@@ -1,0 +1,115 @@
+/* Reset default <button> styles.*/
+button.toggle {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.toggle:focus {
+  outline: 0;
+}
+
+.toggle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1em;
+  cursor: pointer;
+  gap: 1ch;
+}
+
+.toggle-display {
+  --offset: 0.25em;
+  --diameter: 1.8em;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: calc(var(--diameter) * 2 + var(--offset) * 2);
+  height: calc(var(--diameter) + var(--offset) * 2);
+  box-sizing: content-box;
+
+  border: 0.1em solid rgb(0 0 0 / 0.2);
+
+  position: relative;
+  border-radius: 100vw;
+  background: linear-gradient(
+    45deg,
+    var(--toggle-gradient-start),
+    var(--toggle-gradient-end)
+  ); /* not appearing*/
+
+  transition: 250ms;
+  cursor: pointer;
+}
+
+/* Handle for toggle */
+.toggle-display::before {
+  content: "";
+
+  width: var(--diameter);
+  height: var(--diameter);
+  border-radius: 50%;
+
+  box-sizing: border-box;
+  border: 0.1 solid rgb(0 0 0 / 0.2);
+
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: auto;
+  right: var(--offset);
+  transform: translate(0, -50%);
+
+  background-color: var(--toggle-handle);
+  transition: inherit;
+}
+
+.toggle-input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.toggle:focus .toggle-display {
+  outline: 1px dotted var(--text-primary);
+  outline: 1px auto -webkit-focus-ring-color;
+}
+
+/**
+ * When the input is checked, slide the handle to the right so it covers
+ * the cross icon instead of the checkmark one.
+ */
+.toggle[aria-pressed="true"] .toggle-display::before {
+  transform: translate(-100%, -50%);
+}
+
+/**
+ * When the input is disabled, tweak the toggle styles so it looks dimmed 
+ * with less sharp colors, softer opacity and a relevant cursor.
+ */
+.toggle[disabled] .toggle-display {
+  opacity: 0.6;
+  filter: grayscale(40%);
+  cursor: not-allowed;
+}
+
+.toggle-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  color: white;
+  fill: currentcolor;
+  vertical-align: middle;
+}
+
+.toggle-icon-cross {
+  font-size: 85%;
+}

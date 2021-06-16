@@ -2,6 +2,9 @@
 @import url("./base/typography.css");
 @import url("./base/variables.css");
 
+/* Components */
+@import url("./components/toggler.css");
+
 * {
   box-sizing: border-box;
 }
@@ -18,7 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 25px;
+  padding: 24px;
 }
 
 /* Header */
@@ -29,21 +32,16 @@ body {
   padding: 4px;
 }
 
-/* Selected dark mode option*/
-[role="switch"][aria-checked="true"] :first-child,
-[role="switch"][aria-checked="false"] :last-child {
-  background: var(--toggle-selected);
-  color: var(--toggle-background);
-  border-radius: 50%;
+hr {
+  margin: 24px 0 18px;
 }
 
-.ThemeToggler {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.sub-heading {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--text-secondary);
 }
 
-.sub-heading,
 .handle {
   font-weight: bold;
   color: var(--text-secondary);
@@ -82,8 +80,7 @@ section {
       var(--card-background),
       var(--card-background)
     ),
-    /* Toggle */
-      radial-gradient(circle at top left, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    radial-gradient(circle at top left, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
@@ -111,7 +108,7 @@ section {
 .statistic {
   font-size: 56px;
   font-weight: 700;
-  margin: 8px 0;
+  margin: 0;
   padding: 0;
   color: var(--text-primary);
 }
