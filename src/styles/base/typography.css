@@ -8,6 +8,7 @@
 h1 {
   font-size: 24px;
   color: var(--text-primary);
+  margin-bottom: 0.3em;
 }
 
 h2 {
