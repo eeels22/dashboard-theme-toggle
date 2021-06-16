@@ -2,9 +2,6 @@ button.toggle {
   border: 0;
   padding: 0;
   background: transparent;
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--text-secondary-alt);
 }
 
 .toggle:focus {
@@ -13,13 +10,19 @@ button.toggle {
 
 .toggle {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   position: relative;
   margin-bottom: 1em;
   cursor: pointer;
-  gap: 1ch;
+}
+
+.toggle-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-secondary-alt);
 }
 
 .toggle-display {
@@ -78,16 +81,29 @@ button.toggle {
 }
 
 .toggle:focus .toggle-display {
-  outline: 1px dotted var(--text-primary);
+  outline: 1px dotted #212121; /* 1 */
   outline: 1px auto -webkit-focus-ring-color;
 }
 
 /**
- * When the input is checked, slide the handle to the right so it covers
+ * When the toggle is interacted with with a mouse click,
+ * remove the focus outline. This is the native behaviour where
+ * the focus is not visible when clicking it.
+ */
+.toggle:focus:not(:focus-visible) .toggle-display {
+  outline: 0;
+}
+
+/**
+ * When the button is pressed, slide the handle to the left so it covers
  * the cross icon instead of the checkmark one.
  */
 .toggle[aria-pressed="true"] .toggle-display::before {
-  transform: translate(100%, -50%);
+  transform: translate(-100%, -50%);
+}
+
+.toggle[aria-pressed="false"] .toggle-display::before {
+  transform: translate(0, -50%);
 }
 
 /**
