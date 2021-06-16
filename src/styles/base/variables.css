@@ -13,6 +13,10 @@ body {
   --toggle-handle: hsl(222, 50%, 96%); /* Lighter grey */
   --toggle-gradient-start: hsl(205, 74%, 54%);
   --toggle-gradient-end: hsl(154, 53%, 54%);
+
+  /* trend */
+  --trend-up: hsl(163, 72%, 41%);
+  --trend-down: hsl(356, 69%, 56%);
 }
 
 .App.dark {

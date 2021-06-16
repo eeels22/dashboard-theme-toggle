@@ -5,6 +5,7 @@
 /* Components */
 @import url("./components/header.css");
 @import url("./components/toggler.css");
+@import url("./components/trend.css");
 @import url("./components/footer.css");
 
 * {
@@ -138,22 +139,4 @@ section {
   font-size: 32px;
   font-weight: 700;
   color: var(--text-primary);
-}
-
-/* Trend */
-
-.trend-icon {
-  margin-right: 4px;
-}
-
-.trend {
-  font-weight: 700;
-}
-
-.up {
-  color: hsl(163, 72%, 41%);
-}
-
-.down {
-  color: hsl(356, 69%, 56%);
 }

@@ -1,0 +1,15 @@
+.trend-icon {
+  margin-right: 4px;
+}
+
+.trend {
+  font-weight: 700;
+}
+
+.up {
+  color: var(--trend-up);
+}
+
+.down {
+  color: var(--trend-down);
+}
