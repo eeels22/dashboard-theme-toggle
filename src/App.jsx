@@ -23,7 +23,7 @@ function App() {
   return (
     <div className={themeClass}>
       <Header theme={theme} onClick={setTheme} />
-      <section>{followerCardArray}</section>
+      <section className="follower-card-section">{followerCardArray}</section>
       <OverviewList />
       <Footer />
     </div>
