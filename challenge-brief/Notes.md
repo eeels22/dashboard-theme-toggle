@@ -47,6 +47,7 @@
   - https://scottaohara.github.io/a11y_styled_form_controls/
   - https://kittygiraudel.com/2021/04/05/an-accessible-toggle/
   - https://inclusive-components.design/toggle-button/
+  - https://kittygiraudel.com/2021/04/05/an-accessible-toggle/#button-variant
 
 How you would style the active state is quite up to you, but I’d personally save on writing class attributes to the <span>s with JavaScript. Instead, I’d write some CSS using pseudo classes to target the relevant span dependent on the state.
 
