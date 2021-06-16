@@ -93,15 +93,12 @@ section {
 .statistic {
   font-size: 56px;
   font-weight: 700;
-  margin: 0;
-  padding: 0;
   color: var(--text-primary);
 }
 
 .followers {
   font-size: 12px;
   letter-spacing: 0.6em;
-  margin: 0;
   color: var(--text-secondary);
 }
 
