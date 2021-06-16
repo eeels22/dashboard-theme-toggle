@@ -1,32 +1,31 @@
+// NPM package
+import { useState } from "react";
+
 //Project files
 import "./styles/style.css";
 import Header from "./components/Header";
 import OverviewList from "./components/OverviewList";
 import toplineData from "./data/topline.json";
 import FollowerCard from "./components/FollowerCard";
+import Footer from "./components/Footer";
 
 function App() {
+  // Local state
+  const [theme, setTheme] = useState("light");
+
   // Constants
   const followerCardArray = toplineData.map((item) => (
     <FollowerCard key={item.id} info={item} />
   ));
 
+  const themeClass = theme === "light" ? "App" : "App dark";
+
   return (
-    <div className="App">
-      <Header />
+    <div className={themeClass}>
+      <Header theme={theme} onClick={setTheme} />
       <section>{followerCardArray}</section>
       <OverviewList />
-      <footer class="attribution">
-        Challenge by{" "}
-        <a
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Frontend Mentor
-        </a>
-        . Coded by <a href="https://github.com/eeels22">En-Chi Liu</a>.
-      </footer>
+      <Footer />
     </div>
   );
 }

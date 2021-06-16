@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-body {
+.App {
   background: var(--background);
 }
 
@@ -177,7 +177,8 @@ section {
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: var(--text-primary);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--text-link);
 }

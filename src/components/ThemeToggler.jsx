@@ -1,7 +1,18 @@
-export default function ThemeToggler() {
+export default function ThemeToggler({ theme, onClick }) {
+  // Functions
+  const handleClick = () => {
+    const chosenTheme = theme === "light" ? "dark" : "light";
+    onClick(chosenTheme);
+  };
+
   return (
     <div className="ThemeToggler">
-      <button className="toggle" type="button" aria-pressed="false">
+      <button
+        className="toggle"
+        type="button"
+        aria-pressed="false"
+        onClick={handleClick}
+      >
         Dark mode
         <span className="toggle-display" hidden>
           <svg

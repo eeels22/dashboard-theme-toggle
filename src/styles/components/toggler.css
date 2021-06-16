@@ -1,11 +1,10 @@
-/* Reset default <button> styles.*/
 button.toggle {
   border: 0;
   padding: 0;
   background: transparent;
   font-size: 14px;
   font-weight: 700;
-  color: var(--text-secondary);
+  color: var(--text-secondary-alt);
 }
 
 .toggle:focus {
@@ -43,7 +42,7 @@ button.toggle {
     45deg,
     var(--toggle-gradient-start),
     var(--toggle-gradient-end)
-  ); /* not appearing*/
+  );
 
   transition: 250ms;
   cursor: pointer;
@@ -88,7 +87,7 @@ button.toggle {
  * the cross icon instead of the checkmark one.
  */
 .toggle[aria-pressed="true"] .toggle-display::before {
-  transform: translate(-100%, -50%);
+  transform: translate(100%, -50%);
 }
 
 /**
