@@ -30,13 +30,13 @@ Users should be able to:
 
 #### Desktop views
 
-![Light mode desktop view](./screenshots/light-desktop.png)
-![Dark mode desktop view](./screenshots/dark-desktop.png)
+![Light mode desktop view](./screenshots/light-desktop.PNG)
+![Dark mode desktop view](./screenshots/dark-desktop.PNG)
 
 #### Mobile views
 
-![Light mode mobile view](./screenshots/light-mobile.png)
-![Dark mode mobile view](./screenshots/dark-mobile.png)
+![Light mode mobile view](./screenshots/light-mobile.PNG)
+![Dark mode mobile view](./screenshots/dark-mobile.PNG)
 
 ### Links
 
@@ -73,5 +73,5 @@ I can improve the solution by:
 
 ## Author and acknowledgments
 
-- Coded by En-Chi Liu - [GitHub profile(https://github.com/eeels22)
+- Coded by En-Chi Liu - [GitHub profile](https://github.com/eeels22)
 - Challenge, UI design and icons provided by [Frontend Mentor](https://www.frontendmentor.io)
