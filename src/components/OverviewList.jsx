@@ -11,7 +11,7 @@ export default function OverviewList() {
   return (
     <section>
       <h2>Overview - Today</h2>
-      {metricCardArray}
+      <div className="card-section">{metricCardArray}</div>
     </section>
   );
 }

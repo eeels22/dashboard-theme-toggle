@@ -82,16 +82,3 @@
   letter-spacing: 0.6em;
   color: var(--text-secondary);
 }
-
-@media (min-width: 600px) {
-  .follower-card-section {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
-    justify-content: space-between;
-  }
-
-  .FollowerCard {
-    width: 255px;
-  }
-}

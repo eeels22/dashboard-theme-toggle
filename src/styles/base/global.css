@@ -13,13 +13,28 @@
   padding: 24px;
 }
 
-section {
+.card-section {
   width: 100%;
 }
 
-/* @media (min-width: 600px) {
-  section {
-    width: 600px;
+@media (min-width: 600px) {
+  .card-section {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
   }
 }
- */
+
+@media (min-width: 1080px) {
+  .container {
+    max-width: 1080px;
+  }
+
+  .card-section {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+  }
+}

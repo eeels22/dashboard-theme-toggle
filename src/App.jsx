@@ -22,10 +22,12 @@ function App() {
 
   return (
     <div className={themeClass}>
-      <Header theme={theme} onClick={setTheme} />
-      <section className="follower-card-section">{followerCardArray}</section>
-      <OverviewList />
-      <Footer />
+      <div className="container">
+        <Header theme={theme} onClick={setTheme} />
+        <section className="card-section">{followerCardArray}</section>
+        <OverviewList />
+        <Footer />
+      </div>
     </div>
   );
 }

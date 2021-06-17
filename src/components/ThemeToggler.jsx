@@ -2,13 +2,14 @@
 import { useState } from "react";
 
 export default function ThemeToggler({ theme, onClick }) {
-  const [pressed, setPressed] = useState(theme === "light" ? "false" : "true");
+  const whetherPressed = theme === "light" ? "false" : "true";
+  const [pressed, setPressed] = useState(whetherPressed);
 
   // Functions
   const handleClick = () => {
     const chosenTheme = !pressed ? "dark" : "light";
-    onClick(chosenTheme);
     setPressed(!pressed);
+    onClick(chosenTheme);
   };
 
   return (
