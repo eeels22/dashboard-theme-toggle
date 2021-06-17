@@ -1,0 +1,13 @@
+.Header {
+  width: 100%;
+}
+
+hr {
+  margin: 24px 0 18px;
+}
+
+.sub-heading {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--text-secondary);
+}
