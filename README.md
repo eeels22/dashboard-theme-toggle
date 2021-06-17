@@ -13,8 +13,7 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Author and acknowledgments](#author-and-acknowledgments)
 
 ## Overview
 
