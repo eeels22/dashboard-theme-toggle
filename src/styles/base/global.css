@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .App {
   background: var(--background);
   width: 100vw;
@@ -12,11 +18,13 @@
   align-items: center;
   padding: 24px;
 }
+
 .container {
-  width: calc(100% - 2 * 24px);
+  width: calc(100% - 48px);
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1;
 }
 
 section {
@@ -28,6 +36,7 @@ section {
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: space-between;
+  flex-grow: 1;
 }
 
 @media (min-width: 600px) {
