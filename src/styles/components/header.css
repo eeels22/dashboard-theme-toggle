@@ -11,3 +11,16 @@ hr {
   font-weight: bold;
   color: var(--text-secondary);
 }
+
+@media (min-width: 660px) {
+  hr {
+    display: none;
+  }
+  .Header {
+    display: grid;
+    grid-template-columns: 1fr 140px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+}
