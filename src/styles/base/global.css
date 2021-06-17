@@ -46,6 +46,10 @@ section {
     max-width: 1080px;
   }
 
+  .toggle {
+    width: 140px;
+  }
+
   .card-section {
     display: grid;
     gap: 1rem;
