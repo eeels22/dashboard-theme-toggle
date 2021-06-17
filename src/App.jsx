@@ -26,8 +26,8 @@ function App() {
         <Header theme={theme} onClick={setTheme} />
         <section className="card-section">{followerCardArray}</section>
         <OverviewList />
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }
