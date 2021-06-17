@@ -28,12 +28,20 @@ Users should be able to:
 
 ### Screenshot
 
-Screenshots coming soon...
+#### Desktop views
+
+![Light mode desktop view](./screenshots/light-desktop.png)
+![Dark mode desktop view](./screenshots/dark-desktop.png)
+
+#### Mobile views
+
+![Light mode mobile view](./screenshots/light-mobile.png)
+![Dark mode mobile view](./screenshots/dark-mobile.png)
 
 ### Links
 
 - Solution URL: coming soon...
-- Live Site URL: coming soon...
+- [Live site](https://dashboard-theme-toggle.web.app/)
 
 ## My process
 
@@ -60,10 +68,10 @@ I can improve the solution by:
 
 ### Useful resources
 
-- ['An accessible toggle' by Kitty Giraudel](https://kittygiraudel.com/2021/04/05/an-accessible-toggle/#button-variant) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- ['An accessible toggle' by Kitty Giraudel](https://kittygiraudel.com/2021/04/05/an-accessible-toggle) - A detailed walkthrough of a HTML + CSS only implementation of an accessible toggle. This inspired me to include the check and cross icons in the toggle to make the choices clearer.
 - ['A complete guide to dark mode on the web' by CSS Tricks](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/) - Outlines different approaches to implementing dark mode.
 
 ## Author and acknowledgments
 
-- Coded by En-Chi Liu [GitHub](https://github.com/eeels22)
+- Coded by En-Chi Liu - [GitHub profile(https://github.com/eeels22)
 - Challenge, UI design and icons provided by [Frontend Mentor](https://www.frontendmentor.io)
