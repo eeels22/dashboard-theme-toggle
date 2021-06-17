@@ -11,6 +11,10 @@
   background: var(--card-background);
 }
 
+.FollowerCard:hover {
+  background: var(--card-background-hover);
+}
+
 .facebook {
   border-top: 4px solid hsl(208, 92%, 53%);
 }
@@ -25,6 +29,17 @@
   background-image: linear-gradient(
       var(--card-background),
       var(--card-background)
+    ),
+    radial-gradient(circle at top left, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.instagram:hover {
+  border-top: 4px solid transparent;
+  background-image: linear-gradient(
+      var(--card-background-hover),
+      var(--card-background-hover)
     ),
     radial-gradient(circle at top left, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
   background-origin: border-box;
