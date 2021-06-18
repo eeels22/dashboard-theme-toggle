@@ -7,9 +7,7 @@ import { useTheme, useThemeUpdate } from "../context/ThemeContext";
 export default function ThemeToggler() {
   const darkTheme = useTheme();
   const toggleTheme = useThemeUpdate();
-
-  const whetherPressed = darkTheme === "light" ? false : true;
-  const [pressed, setPressed] = useState(whetherPressed);
+  const [pressed, setPressed] = useState(darkTheme); // true if using dark theme
 
   // Functions
   const handleClick = () => {
