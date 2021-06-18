@@ -55,8 +55,9 @@ Users should be able to:
 
 ### What I learned
 
-- Using `linear-gradient` on borders with `border-radius`
+- Achieving a `linear-gradient` effect on borders with `border-radius`
 - Considerations in making an accessible toggle button
+- Using `useContext` hook to avoid passing props down many levels
 
 ### Continued development
 
@@ -69,6 +70,7 @@ I can improve the solution by:
 
 - ['An accessible toggle' by Kitty Giraudel](https://kittygiraudel.com/2021/04/05/an-accessible-toggle) - A detailed walkthrough of a HTML + CSS only implementation of an accessible toggle. This inspired me to include the check and cross icons in the toggle to make the choices clearer.
 - ['A complete guide to dark mode on the web' by CSS Tricks](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/) - Outlines different approaches to implementing dark mode.
+- ['Learn useContext in 13 minutes' by Web Dev Simplified](https://youtu.be/5LrDIWkK_Bc) - Video introduction to useContext hook.
 
 ## Author and acknowledgments
 
