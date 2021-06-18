@@ -1,7 +1,7 @@
 // Project files
 import ThemeToggler from "./ThemeToggler";
 
-export default function Header({ theme, onClick }) {
+export default function Header() {
   return (
     <header className="Header">
       <div>
@@ -9,7 +9,7 @@ export default function Header({ theme, onClick }) {
         <p className="sub-heading">Total Followers: 23,004</p>
         <hr />
       </div>
-      <ThemeToggler theme={theme} onClick={onClick} />
+      <ThemeToggler />
     </header>
   );
 }

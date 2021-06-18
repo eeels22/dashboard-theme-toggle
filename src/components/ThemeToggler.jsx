@@ -1,15 +1,20 @@
 // NPM package
 import { useState } from "react";
 
-export default function ThemeToggler({ theme, onClick }) {
-  const whetherPressed = theme === "light" ? false : true;
+// Project files
+import { useTheme, useThemeUpdate } from "../context/ThemeContext";
+
+export default function ThemeToggler() {
+  const darkTheme = useTheme();
+  const toggleTheme = useThemeUpdate();
+
+  const whetherPressed = darkTheme === "light" ? false : true;
   const [pressed, setPressed] = useState(whetherPressed);
 
   // Functions
   const handleClick = () => {
-    const chosenTheme = !pressed ? "dark" : "light";
     setPressed(!pressed);
-    onClick(chosenTheme);
+    toggleTheme();
   };
 
   return (
