@@ -1,11 +1,12 @@
 // NPM packages
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext } from "react";
+import useLocalStorage from "../hooks/useLocalStorage";
 
-// create the context objects
+// Create the context objects
 const ThemeContext = createContext();
 const ThemeUpdateContext = createContext();
 
-// custom hooks provide easy access to context values
+// Custom hooks provide easy access to context values
 export function useTheme() {
   return useContext(ThemeContext);
 }
@@ -14,12 +15,15 @@ export function useThemeUpdate() {
   return useContext(ThemeUpdateContext);
 }
 
-// wraps logic for our state
+// Wraps logic for our state
 export function ThemeProvider({ children }) {
-  const [darkTheme, setDarkTheme] = useState(false);
+  // First arg is key to the value in local storage, second arg is default value
+  const [darkTheme, setDarkTheme] = useLocalStorage("theme", "light");
 
   function toggleTheme() {
-    setDarkTheme((prevDarkTheme) => !prevDarkTheme);
+    setDarkTheme((prevDarkTheme) =>
+      prevDarkTheme === "dark" ? "light" : "dark"
+    );
   }
 
   return (

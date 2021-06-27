@@ -5,9 +5,11 @@ import { useState } from "react";
 import { useTheme, useThemeUpdate } from "../context/ThemeContext";
 
 export default function ThemeToggler() {
+  // States
   const darkTheme = useTheme();
   const toggleTheme = useThemeUpdate();
-  const [pressed, setPressed] = useState(darkTheme); // true if using dark theme
+  const usingDarkTheme = darkTheme === "dark";
+  const [pressed, setPressed] = useState(usingDarkTheme);
 
   // Functions
   const handleClick = () => {
