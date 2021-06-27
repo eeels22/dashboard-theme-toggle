@@ -1,3 +1,7 @@
+:root {
+  color-scheme: light dark; /* the browser takes the user’s color scheme preferences into consideration when rendering UA-controlled elements */
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

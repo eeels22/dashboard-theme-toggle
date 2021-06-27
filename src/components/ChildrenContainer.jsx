@@ -7,15 +7,15 @@ import FollowerCard from "../components/FollowerCard";
 import Footer from "./Footer";
 
 export default function ChildrenContainer() {
+  // State
   const darkTheme = useTheme();
-  console.log("logging dark theme from App", darkTheme);
 
   // Constants
   const followerCardArray = toplineData.map((item) => (
     <FollowerCard key={item.id} info={item} />
   ));
 
-  const themeClass = darkTheme ? "App dark" : "App";
+  const themeClass = darkTheme === "dark" ? "App dark" : "App";
 
   return (
     <div className={themeClass}>

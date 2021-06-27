@@ -58,17 +58,17 @@ Users should be able to:
 - Achieving a `linear-gradient` effect on borders with `border-radius`
 - Considerations in making an accessible toggle button
 - Using `useContext` hook to avoid passing props down many levels
+- Syning state to local storage so that it persists through a page refresh.
 
 ### Continued development
 
 I can improve the solution by:
 
-- Saving the user theme choice in local storage for their next visit
 - Use the `prefers-color-scheme` media query to set the theme to their OS preference.
 
 ### Useful resources
 
-- ['An accessible toggle' by Kitty Giraudel](https://kittygiraudel.com/2021/04/05/an-accessible-toggle) - A detailed walkthrough of a HTML + CSS only implementation of an accessible toggle. This inspired me to include the check and cross icons in the toggle to make the choices clearer.
+- ['An accessible toggle' by Kitty Giraudel](https://kittygiraudel.com/2021/04/05/an-accessible-toggle) - A detailed walkthrough of a HTML and CSS only implementation of an accessible toggle. This inspired me to include the check and cross icons in the toggle to make the choices clearer.
 - ['A complete guide to dark mode on the web' by CSS Tricks](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/) - Outlines different approaches to implementing dark mode.
 - ['Learn useContext in 13 minutes' by Web Dev Simplified](https://youtu.be/5LrDIWkK_Bc) - Video introduction to useContext hook.
 
@@ -76,3 +76,5 @@ I can improve the solution by:
 
 - Coded by En-Chi Liu - [GitHub profile](https://github.com/eeels22)
 - Challenge, UI design and icons provided by [Frontend Mentor](https://www.frontendmentor.io)
+- `useLocalStorage` hook from [useHooks](https://usehooks.com/useLocalStorage/)
+- Toggle button HTML and CSS adapted from example by Kitty Giraudel, same link as above.
